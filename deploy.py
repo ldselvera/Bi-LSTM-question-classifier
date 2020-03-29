@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, session, redirect
 # import os
 # import sys
-# import numpy as np
-# import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 # from model.predict import prediction
 # from model.load import load_info
 
@@ -21,9 +19,9 @@ def result():
     question = request.form['text']
   
   if question=='':
-    answer="Please provide a comment."
+    answer="Please provide a question."
   else:
-    answer='Not a troll.'
+    answer='Sincere question.'
     #answer = prediction(question, model, tokenizer)
   return render_template("classification.html", result= answer)
 
