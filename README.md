@@ -1,2 +1,14 @@
-# question_classification
-Insincere Question Classification
+# Online Forums Question Classifier
+Website for insincere question classification on Q&A forums.
+
+## Deep Learning Model
+
+Pytorch, Keras, Sklearn, Numpy, Pandas
+
+## Website
+
+To run flask website execute:
+
+$python deploy.py
+
+Flask, HTML, CSS
