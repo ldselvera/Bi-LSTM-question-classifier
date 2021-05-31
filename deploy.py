@@ -1,17 +1,11 @@
 from flask import Flask, render_template, request, session, redirect
-# import os
-# import sys
-# from model.predict import prediction
-# from model.load import load_info
+from model.predict import prediction
 
 app = Flask(__name__)
-
-# global model
-# model, tokenizer = load_info()
  
 @app.route('/')
 def index():
-   return render_template('index.html')
+  return render_template('index.html')
 
 @app.route('/classification', methods=['POST', 'GET'])
 def result():
@@ -21,8 +15,8 @@ def result():
   if question=='':
     answer="Please provide a question."
   else:
-    answer='Sincere question.'
-    #answer = prediction(question, model, tokenizer)
+    # answer='Proper Question'
+    answer = prediction(question)
   return render_template("classification.html", result= answer)
 
 if __name__ == '__main__':
