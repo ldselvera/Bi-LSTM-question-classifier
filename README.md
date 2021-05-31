@@ -3,7 +3,7 @@ Website for insincere question classification on Q&A forums.
 
 ## Deep Learning Model
 
-Pytorch, Keras, Sklearn, Numpy, Pandas
+Keras, Sklearn, Numpy, Pandas
 
 ## Website
 
